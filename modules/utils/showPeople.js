@@ -5,6 +5,7 @@ const showPeople = (people) => {
 			return `<p>${name} <strong>${job}</strong></p>`;
 		})
 		.join('');
+	return newPeople;
 };
 
 export default showPeople;
