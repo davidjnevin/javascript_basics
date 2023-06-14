@@ -6,21 +6,20 @@ console.log(numbers);
 numbers.reverse();
 console.log(numbers);
 
-
 const courses = [
-	{ id: 1, name: 'Gamma' },
-	{ id: 2, name: 'beta' },
-	{ id: 3, name: 'Alpha' },
-	{ id: 3, name: 'Delta' },
+  { id: 1, name: "Gamma" },
+  { id: 2, name: "beta" },
+  { id: 3, name: "Alpha" },
+  { id: 3, name: "Delta" },
 ];
 
-courses.sort(function(a, b) {
-	const nameA = a.name.toUpperCase();
-	const nameB = b.name.toUpperCase();
-	console.log(courses);
-	if (nameA < nameB) return -1;
-	if (nameA > nameB) return 1;
-	return 0
+courses.sort(function (a, b) {
+  const nameA = a.name.toUpperCase();
+  const nameB = b.name.toUpperCase();
+  console.log(courses);
+  if (nameA < nameB) return -1;
+  if (nameA > nameB) return 1;
+  return 0;
 });
 
-console.log(courses)
+console.log(courses);

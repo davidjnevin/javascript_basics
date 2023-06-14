@@ -1,3 +1,3 @@
-const display = () => {}
+const display = () => {};
 
-export default display
+export default display;

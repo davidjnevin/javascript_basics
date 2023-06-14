@@ -52,8 +52,8 @@
 const fetchDadJoke = async () => {
   const response = await fetch(url, {
     headers: {
-      Accept: 'application/json',
-      'User-Agent': 'learning app',
+      Accept: "application/json",
+      "User-Agent": "learning app",
     },
   });
 

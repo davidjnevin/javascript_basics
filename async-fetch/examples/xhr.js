@@ -1,7 +1,7 @@
 // JSON Javascript Object Notation
-const btn = document.querySelector('.btn');
-const url = './api/people.json';
-btn.addEventListener('click', () => {
+const btn = document.querySelector(".btn");
+const url = "./api/people.json";
+btn.addEventListener("click", () => {
   getData(url);
 });
 
@@ -9,7 +9,7 @@ function getData(url) {
   const xhr = new XMLHttpRequest();
   console.log(xhr);
 
-  xhr.open('GET', url);
+  xhr.open("GET", url);
   xhr.onreadystatechange = function () {
     // console.log(xhr);
     if (xhr.readyState === 4 && xhr.status === 200) {
@@ -21,8 +21,8 @@ function getData(url) {
         .map((item) => {
           return `<p>${item.name}</p>`;
         })
-        .join('');
-      const element = document.createElement('div');
+        .join("");
+      const element = document.createElement("div");
       element.innerHTML = displayData;
       document.body.appendChild(element);
     } else {

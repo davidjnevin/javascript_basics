@@ -7,7 +7,6 @@ const sliced = combined.slice(2, 4);
 console.log(combined);
 console.log(sliced);
 
-
 // spread operator
 
 const firstArray = [1, 2, 3];

@@ -1,4 +1,3 @@
-
 // Higher Order Funtions in Javascripts
 // Functions that operate on/with other functions. They can:
 // 1. Accept other functions as arguments
@@ -17,8 +16,8 @@
 
 const numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9];
 
-numbers.forEach(function(num) {
-	console.log(num * 2);
+numbers.forEach(function (num) {
+  console.log(num * 2);
 });
 
 // setTimeout
@@ -26,10 +25,9 @@ numbers.forEach(function(num) {
 // setTimeout is asynchronous
 // setTimeout is a higher order function
 
-setTimeout(function() {
-	console.log('Hello from the timeout!');
+setTimeout(function () {
+  console.log("Hello from the timeout!");
 }, 3000);
-
 
 // filter
 // filter is a method on the Array prototype
@@ -45,15 +43,14 @@ setTimeout(function() {
 // filter skips empty indices in sparse arrays
 // filter does not skip undefined elements in sparse arrays
 
-
-const odds = numbers.filter(function(num) {
-	return num % 2 === 1;
+const odds = numbers.filter(function (num) {
+  return num % 2 === 1;
 });
 
 console.log(odds);
 
-const evens = numbers.filter(function(num) {
-	return num % 2 === 0;
+const evens = numbers.filter(function (num) {
+  return num % 2 === 0;
 });
 
 console.log(evens);
@@ -66,11 +63,8 @@ console.log(evens);
 // addEventListener passes an event object to the callback function
 // addEventListener is used to listen for events on a DOM node
 
-const btn = document.querySelector('#clicker');
+const btn = document.querySelector("#clicker");
 
-btn.addEventListener('click', function(e) {
-	console.log(e);
+btn.addEventListener("click", function (e) {
+  console.log(e);
 });
-
-
-

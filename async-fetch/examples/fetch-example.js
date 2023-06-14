@@ -1,8 +1,8 @@
-const url = './api/people.json';
+const url = "./api/people.json";
 
-const btn = document.querySelector('.btn');
+const btn = document.querySelector(".btn");
 
-btn.addEventListener('click', () => {
+btn.addEventListener("click", () => {
   fetch(url)
     .then((resp) => resp.json())
     .then((data) => {
@@ -16,8 +16,8 @@ const displayItems = (items) => {
     .map((item) => {
       return `<p>${item.name}</p>`;
     })
-    .join('');
-  const element = document.createElement('div');
+    .join("");
+  const element = document.createElement("div");
   element.innerHTML = displayData;
   document.body.appendChild(element);
 };

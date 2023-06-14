@@ -12,8 +12,5 @@ let another = numbers;
 // Solution 3
 numbers.splice(0, numbers.length);
 
-
-
-console.log(numbers)
-console.log(another)
-
+console.log(numbers);
+console.log(another);

@@ -1,3 +1,3 @@
-const displayButtons = () => {}
+const displayButtons = () => {};
 
-export default displayButtons
+export default displayButtons;

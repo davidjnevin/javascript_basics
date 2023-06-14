@@ -40,10 +40,10 @@
 ```js
 // Text Filter
 
-const form = document.querySelector('.input-form');
-const searchInput = document.querySelector('.search-input');
+const form = document.querySelector(".input-form");
+const searchInput = document.querySelector(".search-input");
 
-form.addEventListener('keyup', () => {
+form.addEventListener("keyup", () => {
   // keyup - fired when key released
   const inputValue = searchInput.value;
   filteredProducts = products.filter((product) => {

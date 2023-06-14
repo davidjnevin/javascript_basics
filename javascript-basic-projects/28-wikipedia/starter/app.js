@@ -1,1 +1,1 @@
-console.log('wiki starter');
+console.log("wiki starter");

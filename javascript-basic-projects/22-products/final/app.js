@@ -1,6 +1,6 @@
-const url = 'https://course-api.com/javascript-store-products';
+const url = "https://course-api.com/javascript-store-products";
 
-const productsDOM = document.querySelector('.products-center');
+const productsDOM = document.querySelector(".products-center");
 
 const fetchProducts = async () => {
   productsDOM.innerHTML = '<div class="loading"></div>';
@@ -29,7 +29,7 @@ const displayProducts = (list) => {
             </footer>
           </a>`;
     })
-    .join('');
+    .join("");
   productsDOM.innerHTML = ` <div class="products-container">
          ${productList}
           

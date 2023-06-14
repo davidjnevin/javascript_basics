@@ -1,19 +1,19 @@
 // callbacks, promises, async/await
 // PROMISES - Pending, Resolved, Rejected
 // then catch - pass another callback
-const heading1 = document.querySelector('.one');
-const heading2 = document.querySelector('.two');
-const heading3 = document.querySelector('.three');
+const heading1 = document.querySelector(".one");
+const heading2 = document.querySelector(".two");
+const heading3 = document.querySelector(".three");
 
-const btn = document.querySelector('.btn');
+const btn = document.querySelector(".btn");
 
-btn.addEventListener('click', () => {
+btn.addEventListener("click", () => {
   setTimeout(() => {
-    heading1.style.color = 'red';
+    heading1.style.color = "red";
     setTimeout(() => {
-      heading2.style.color = 'green';
+      heading2.style.color = "green";
       setTimeout(() => {
-        heading3.style.color = 'blue';
+        heading3.style.color = "blue";
       }, 1000);
     }, 2000);
   }, 1000);

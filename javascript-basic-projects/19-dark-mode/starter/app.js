@@ -1,16 +1,16 @@
+const toggleBtn = document.querySelector(".btn");
+const articlesContainer = document.querySelector(".articles");
 
-const toggleBtn = document.querySelector('.btn');
-const articlesContainer = document.querySelector('.articles');
-
-toggleBtn.addEventListener('click', () => {
-	document.documentElement.classList.toggle('dark-theme');
+toggleBtn.addEventListener("click", () => {
+  document.documentElement.classList.toggle("dark-theme");
 });
 
-const articlesData = articles.map((article) => {
-	const { title, date, snippet, length } = article;
-	// format date
-	const formatDate = moment(date).format('MMMM Do, YYYY');
-	return `<article class="post">
+const articlesData = articles
+  .map((article) => {
+    const { title, date, snippet, length } = article;
+    // format date
+    const formatDate = moment(date).format("MMMM Do, YYYY");
+    return `<article class="post">
 <h2>${title}</h2>
 					<div class="post-info">
 <span>${formatDate}</span>
@@ -22,6 +22,7 @@ ${snippet}
 					</p>
 				</article>
 	`;
-}).join('');
+  })
+  .join("");
 
 articlesContainer.innerHTML = articlesData;

@@ -1,14 +1,14 @@
 // Function Decalation
 
 function walk() {
-	console.log('walk');
+  console.log("walk");
 }
 
 walk();
 
 // Anonymous Function Expression
-let run = function() {
-	console.log('run');
+let run = function () {
+  console.log("run");
 };
 
 run();
